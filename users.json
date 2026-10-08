@@ -1,0 +1,8 @@
+[
+    {
+        "email": "nightsin08@gmail.com",
+        "password": "scrypt:32768:8:1$zVSG1ldY9KlR3X0r$3cc5f185da7fa6f2b254f16ca920345edfcc1894740dd7aa6613670b6dd66156f33ac5647395795502ee2b585c9a6019c68b8c6762b39bba088e1b116e5d0234",
+        "name": "nightsin08",
+        "provider": "local"
+    }
+]

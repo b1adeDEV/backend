@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Профиль{% endblock %}
+{% block content %}
+<div class="card center">
+    <h1>Привет, {{ user.name }}!</h1>
+    <p>Email: <b>{{ user.email }}</b></p>
+    <p>Способ входа: <b>{{ user.provider }}</b></p>
+    <a class="button" href="{{ url_for('logout') }}">Выйти</a>
+</div>
+{% endblock %}

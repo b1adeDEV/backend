@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Вход{% endblock %}
+{% block content %}
+<div class="card">
+    <h1>Вход</h1>
+    <form method="post">
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Пароль</label>
+        <input type="password" name="password" required>
+
+        <button type="submit">Войти</button>
+    </form>
+
+    <div class="divider">или</div>
+    <a class="google" href="{{ url_for('google_login') }}">Войти через Google</a>
+
+    <p class="small">Нет аккаунта? <a href="{{ url_for('register') }}">Зарегистрироваться</a></p>
+</div>
+{% endblock %}

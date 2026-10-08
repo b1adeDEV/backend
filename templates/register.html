@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Регистрация{% endblock %}
+{% block content %}
+<div class="card">
+    <h1>Регистрация</h1>
+    <form method="post">
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Пароль</label>
+        <input type="password" name="password" minlength="6" required>
+
+        <button type="submit">Создать аккаунт</button>
+    </form>
+
+    <div class="divider">или</div>
+    <a class="google" href="{{ url_for('google_login') }}">Зарегистрироваться через Google</a>
+
+    <p class="small">Уже есть аккаунт? <a href="{{ url_for('login') }}">Войти</a></p>
+</div>
+{% endblock %}
